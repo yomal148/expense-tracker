@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from "react";
+import './transaction.css'
 
 const Transaction = () => {
   const [amount, setAmount] = useState('');
@@ -38,7 +39,11 @@ const Transaction = () => {
           placeholder="Enter Amount"
           value={amount}
           onInput={handleChange}
-        />
+        /> 
+        <br /> 
+        <div className='bluebutton1'>
+          Add Transaction
+        </div>
       </form>
 
     </>
