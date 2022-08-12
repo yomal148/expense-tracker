@@ -2,7 +2,8 @@ import React from 'react'
 import './App.css';
 import Header from './components/header/Header'
 import Balance from './components/balance/Balance'
-import Transaction from './components/income/Transaction';
+import Transaction from './components/transactions/Transaction';
+import IncomeExpenses from './incomeexpenses/IncomeExpenses';
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <div className='container'> 
         <Balance/>
+        <IncomeExpenses/>
         <Transaction/>
       </div>
     </div>
@@ -20,5 +22,5 @@ function App() {
 }
 
 // Background color
-document.body.style = 'background: gray;';
+document.body.style = 'background: white;';
 export default App;
