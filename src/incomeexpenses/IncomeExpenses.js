@@ -11,8 +11,9 @@ const IncomeExpenses = () => {
         <vr> 
 
         </vr>
-        </div>
-
+        <br />
+    </div>
+        
   )
 }
 

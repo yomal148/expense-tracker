@@ -13,6 +13,7 @@ function App() {
       <div className='container'> 
         <Balance/>
         <IncomeExpenses/>
+        <br />
         <Transaction/>
       </div>
     </div>

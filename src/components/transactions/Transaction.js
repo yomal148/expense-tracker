@@ -5,7 +5,7 @@ import './transaction.css'
 const Transaction = () => {
   const [amount, setAmount] = useState('');
   const [text, setText] = useState('');
-
+  
   // updater function to only allow numbers in amount input box
   const handleChange = event => {
     
@@ -13,6 +13,8 @@ const Transaction = () => {
 
     setAmount(result)
   };
+  
+
   // updater function to only allow text in text input box
   const handleChange2 = event => {
     
@@ -24,6 +26,9 @@ const Transaction = () => {
   return (
     <>
       <form>
+        <b> Add New Transaction </b> <br /> 
+        <hr />
+
          <small> Text </small> <br /> 
         <input
           type="text" 
@@ -31,19 +36,19 @@ const Transaction = () => {
           value={text}
           onInput={handleChange2}
         />
+        
         <br /> 
          <small>  Amount <br /> (negative - expense, positive - income)
          </small>
         <input
-          type="text" pattern="[0-9]*"
+          type="text" 
           placeholder="Enter Amount"
           value={amount}
           onInput={handleChange}
         /> 
+  
         <br /> 
-        <div className='bluebutton1'>
-          Add Transaction
-        </div>
+        <div className='purplebutton1'>Add Transaction</div>
       </form>
 
     </>
